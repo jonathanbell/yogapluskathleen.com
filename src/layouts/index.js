@@ -8,6 +8,8 @@ import Footer from '../components/footer';
 import './elements.css';
 import './wordpress.css';
 
+import favicon from '../images/favicon.png';
+
 const Layout = ({ children, data, location }) => (
   <div>
     <Helmet
@@ -21,6 +23,14 @@ const Layout = ({ children, data, location }) => (
           name: 'keywords',
           content:
             'yoga, victoria, bc, svaroopa, kathleen, kovach, heart of the village, yoga teacher, meditation'
+        }
+      ]}
+      link={[
+        {
+          rel: 'shortcut icon',
+          type: 'image/png',
+          sizes: '32x32',
+          href: `${favicon}`
         }
       ]}
     />
