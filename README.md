@@ -1,6 +1,6 @@
 # yogapluskathleen.com
 
-Source code for [yogapluskathleen.com](https://yogapluskathleen.com), a Gatsby front-end powered by a Wordpress backend. :smile:
+Source code for [yogapluskathleen.com](https://yogapluskathleen.com), a Gatsby/React front-end powered by a Wordpress backend. :smile:
 
 ## Local Install
 
