@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: 'Yoga Plus Kathleen',
-    desc: 'Hatha and Svaroopa Yoga in Victoria, BC'
+    desc:
+      'Kathleen Kovach teaches SvaroopaⓇ and Hatha Yoga Classes in Victoria BC, Canada.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    // Writes styled components out to actual CSS styles, not JS styles and
-    // avoids FOUC : )
+    // When the site is built this writes styled components out to actual
+    // CSS styles, not JS styles and avoids FOUC : )
     'gatsby-plugin-styled-components',
     // Gives access to a nifty little unfocused/"sharpen" image plugin thingy
     'gatsby-transformer-sharp',
@@ -28,6 +29,8 @@ module.exports = {
         hostingWPCOM: false,
         useACF: false
       }
-    }
+    },
+    // Netlify deployment support
+    'gatsby-plugin-netlify'
   ]
 };

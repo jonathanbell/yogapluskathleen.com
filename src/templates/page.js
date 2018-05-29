@@ -12,9 +12,8 @@ export default class Page extends Component {
   }
 }
 
-// Making `$slug` required via `String!` caused errors in GraphQL when URL Path: `/page/`
 export const query = graphql`
-  query PageQuery($slug: String) {
+  query PageQuery($slug: String!) {
     wordpressPage(slug: { eq: $slug }) {
       title
       slug

@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/admin"
+  to = "https://api.yogapluskathleen.com/wp-admin/"
+  status = 302
+  force = true

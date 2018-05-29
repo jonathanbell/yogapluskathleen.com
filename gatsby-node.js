@@ -34,7 +34,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         console.log('Building page layout for:', node.title);
         createPage({
           path: node.slug,
-          component: path.resolve('./src/pages/page.js'),
+          component: path.resolve('./src/templates/page.js'),
           // The `context` property is where we can define variables that will
           // get passed into our GraphQL queries. It will always be an object.
           context: {
@@ -48,7 +48,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         console.log('Building post page layout for:', node.title);
         createPage({
           path: `post/${node.slug}`,
-          component: path.resolve('./src/pages/post.js'),
+          component: path.resolve('./src/templates/post.js'),
           context: {
             slug: node.slug
           }

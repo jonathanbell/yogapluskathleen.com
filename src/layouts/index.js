@@ -15,8 +15,7 @@ const Layout = ({ children, data, location }) => (
       meta={[
         {
           name: 'description',
-          content:
-            'Kathleen Kovach teaches SvaroopaⓇ and Hatha Yoga Classes in Victoria BC, Canada.'
+          content: data.site.siteMetadata.desc
         },
         {
           name: 'keywords',

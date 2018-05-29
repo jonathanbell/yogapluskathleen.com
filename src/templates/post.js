@@ -25,10 +25,8 @@ export default class Post extends Component {
   }
 }
 
-// Making `$slug` required via `String!` caused errors in GraphQL when URL Path: `/post/`
-// Console said: `Variable "$slug" of required type "String!" was not provided.`
 export const query = graphql`
-  query PostQuery($slug: String) {
+  query PostQuery($slug: String!) {
     wordpressPost(slug: { eq: $slug }) {
       title
       slug
