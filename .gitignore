@@ -1,0 +1,13 @@
+# Project dependencies
+.cache
+node_modules
+
+# Build directory
+/public
+
+# Misc
+.idea
+.DS_Store
+
+# Wordpress
+/headless-wp-theme*

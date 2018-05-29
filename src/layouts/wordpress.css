@@ -1,0 +1,93 @@
+.wordpress-page,
+.wordpress-post {
+  padding: 0 1rem;
+}
+
+.wordpress-page img.alignleft,
+.wordpress-post img.alignleft {
+  float: left;
+  margin-right: 1rem;
+}
+
+.wordpress-page img.alignright,
+.wordpress-post img.alignright {
+  float: right;
+  margin-left: 1rem;
+}
+
+.wordpress-page h1,
+.wordpress-page h2,
+.wordpress-page h3,
+.wordpress-page h4,
+.wordpress-page h5,
+.wordpress-page h6,
+.wordpress-post h1,
+.wordpress-post h2,
+.wordpress-post h3,
+.wordpress-post h4,
+.wordpress-post h5,
+.wordpress-post h6,
+.wordpress-page hr {
+  clear: both;
+  font-weight: bold;
+}
+
+.wordpress-page h1,
+.wordpress-post h1 {
+  border-bottom: 3px solid #9c27b0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #616161;
+}
+
+.wordpress-page h2,
+.wordpress-page h3,
+.wordpress-page h4,
+.wordpress-page h5,
+.wordpress-page h6,
+.wordpress-post h2,
+.wordpress-post h3,
+.wordpress-post h4,
+.wordpress-post h5,
+.wordpress-post h6 {
+  /* color: #339966; */
+  color: #47ab79;
+}
+
+.wordpress-post blockquote,
+.wordpress-page blockquote {
+  font-size: 1.5rem;
+  margin: 50px auto;
+  font-style: italic;
+  color: #555555;
+  padding: 1.25rem 30px 1.25rem 75px;
+  /* border-left: 8px solid #78c0a8; */
+  line-height: 1.25;
+  position: relative;
+  background: #ededed;
+}
+
+.wordpress-post blockquote::before,
+.wordpress-page blockquote::before {
+  font-family: Arial;
+  content: '\201C';
+  color: #78c0a8;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+.wordpress-post blockquote::after,
+.wordpress-page blockquote::after {
+  content: '';
+}
+
+.wordpress-post blockquote cite,
+.wordpress-page blockquote cite {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+}
