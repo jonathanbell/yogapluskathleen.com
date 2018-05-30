@@ -5,8 +5,8 @@ import Helmet from 'react-helmet';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
-import './elements.css';
-import './wordpress.css';
+import '../css/elements.css';
+import '../css/wordpress.css';
 
 import favicon from '../images/favicon.png';
 

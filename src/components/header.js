@@ -12,7 +12,7 @@ const HeaderWrapper = styled.div`
   margin-bottom: 1.5rem;
   position: relative;
   overflow: hidden;
-  height: ${({ isHome }) => (isHome ? '66vh' : '33vh')};
+  height: ${({ isHome }) => (isHome ? '65vh' : '37vh')};
 `;
 
 const HeaderContainer = styled.div`
@@ -109,7 +109,7 @@ export default class Header extends Component {
   componentDidUpdate = (prevProps, prevState) => {
     // If prevPath was not '/' and current path is '/' then slide low to high
     if (this.state.prevPath !== '/' && this.props.location.pathname === '/') {
-      this.wrapper.animate([{ height: '33vh' }, { height: '66vh' }], {
+      this.wrapper.animate([{ height: '37vh' }, { height: '65vh' }], {
         duration: 300,
         fill: 'forwards',
         easing: 'cubic-bezier(0.85, 0, 0.07, 1)',
@@ -119,7 +119,7 @@ export default class Header extends Component {
 
     // If prevPath is '/' and current url is not '/' then slide high to low
     if (this.state.prevPath === '/' && this.props.location.pathname !== '/') {
-      this.wrapper.animate([{ height: '66vh' }, { height: '33vh' }], {
+      this.wrapper.animate([{ height: '65vh' }, { height: '37vh' }], {
         duration: 300,
         fill: 'forwards',
         easing: 'cubic-bezier(0.85, 0, 0.07, 1)',

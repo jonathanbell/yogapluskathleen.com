@@ -23,13 +23,26 @@ const FooterContainer = styled.footer`
     grid-template-columns: repeat(2, 1fr);
   }
 
-  img {
+  div img {
     max-width: 350px;
+
+    @media (max-width: 768px) {
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      max-width: 60%;
+    }
   }
 
   small {
     color: #a7a7a7;
     margin-top: 2rem;
+
+    @media (max-width: 768px) {
+      display: block;
+      text-align: right;
+    }
   }
 `;
 
