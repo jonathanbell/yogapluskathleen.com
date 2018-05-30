@@ -90,6 +90,9 @@ export default class Footer extends Component {
             <div>
               <h3>Site Map</h3>
               <nav>
+                <div>
+                  <Link to="/">Posts</Link>
+                </div>
                 {this.props.menu.map(item => (
                   <div key={item.object_slug}>
                     <Link
